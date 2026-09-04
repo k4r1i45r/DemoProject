@@ -1,4 +1,4 @@
-﻿name: Validate Docs Folder
+name: Validate Docs Folder
 
 on:
   push:
@@ -15,10 +15,10 @@ jobs:
       - name: Check /docs exists
         run: |
           if [ ! -d "docs" ]; then
-            echo "/docs folder not found!"
+            echo "docs folder not found!"
             exit 1
           fi
-          echo "/docs folder exists"
+          echo "docs folder exists"
 
       - name: Check required files in /docs
         run: |
