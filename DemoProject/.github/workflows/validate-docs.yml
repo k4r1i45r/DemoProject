@@ -1,0 +1,32 @@
+﻿name: Validate Docs Folder
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check /docs exists
+        run: |
+          if [ ! -d "docs" ]; then
+            echo "/docs folder not found!"
+            exit 1
+          fi
+          echo "/docs folder exists"
+
+      - name: Check required files in /docs
+        run: |
+          files=("ERD.pdf" "endpoint-plan.md" "script.sql")
+          for file in "${files[@]}"; do
+            if [ ! -f "docs/$file" ]; then
+              echo "docs/$file not found!"
+              exit 1
+            fi
+            echo "docs/$file exists"
+          done
