@@ -8,7 +8,8 @@ RaceDay is a full-stack web application for the South African road running, walk
 - **Participant**: Register, browse events, enrol in categories, view own enrolments and results.
 
 ## CI/CD Build Status
-![CI/CD Build](link-to-your-screenshot.png)
+![CI/CD Build] <img width="1355" height="635" alt="checkmark demoproject" src="https://github.com/user-attachments/assets/24d43678-f6ed-4027-a595-1c09736c0d46" />
+
 
 ## Video Walkthrough
 [Watch the Part 1 Explanation Video](https://www.youtube.com/watch?v=your-unlisted-link)
