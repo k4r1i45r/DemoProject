@@ -12,7 +12,7 @@ RaceDay is a full-stack web application for the South African road running, walk
 
 
 ## Video Walkthrough
-[Watch the Part 1 Explanation Video](https://www.youtube.com/watch?v=your-unlisted-link)
+[Watch the Part 1 Explanation Video](https://youtu.be/P5pz2rc23e8?si=xkl24v-wxBnowZH6))
 
 ## Setup Instructions
 1. Clone this repository.
